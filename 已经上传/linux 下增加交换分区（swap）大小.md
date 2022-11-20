@@ -1,6 +1,6 @@
 ---
 title: LINUX下增加交换分区（swap）大小
-date: 2022-04-14 
+date: 2022-08-14 
 categories:
   - 电脑编程
   - LINUX

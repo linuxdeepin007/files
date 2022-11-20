@@ -1,5 +1,5 @@
 ---
-title:  LINUX 配置 V2Ray 客户端
+title: 配置 V2Ray 客户端
 date: 2022-11-05
 categories:
    - 编程电脑
