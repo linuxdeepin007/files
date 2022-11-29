@@ -151,4 +151,8 @@ linux@linux-ThinkCentre-E75:~/文档/blogs$
 ```bash
 linux@linux-ThinkCentre-E75:~/文档/blogs$ git config --global user.email "bs0716@126.com"
 linux@linux-ThinkCentre-E75:~/文档/blogs$ git config --global user.name "linuxdeepin007"
+<<<<<<< HEAD
+=======
+linux@linux-ThinkCentre-E75:~/文档/blogs$ hexo clean
+>>>>>>> 674a6daf68e3f3f257715aba490f2170e5a61265
 ```

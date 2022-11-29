@@ -2,7 +2,11 @@
 title: LINUX文件目录管理
 date: 2022-06-16 
 categories:
+<<<<<<< HEAD
   - 编程电脑
+=======
+  - 电脑编程
+>>>>>>> 674a6daf68e3f3f257715aba490f2170e5a61265
   - LINUX
 tags: 
    - LINUX
@@ -12,7 +16,11 @@ tags:
 linux首先建立一系列空目录，然后将文件挂载到目录中。主要介绍了目录内容和几个重要的文件管理命令。
 <!-- more -->
 
+<<<<<<< HEAD
 ## 一、linux 主要目录及其内容
+=======
+# 一、linux 主要目录及其内容
+>>>>>>> 674a6daf68e3f3f257715aba490f2170e5a61265
 
 |目录|内容|
 |:----:|:----:|
@@ -31,7 +39,11 @@ linux首先建立一系列空目录，然后将文件挂载到目录中。主要
 |/usr|非系统的程序和命令|
 |/var|系统专用的数据和配置文件|
 
+<<<<<<< HEAD
 ## 二、共享文件实例
+=======
+# 二、共享文件实例
+>>>>>>> 674a6daf68e3f3f257715aba490f2170e5a61265
 需求：新建一个名称是happygroup的用户组，添加user1、 user2和user3三个用户，设置工作目录为sharehappy。设置user1为管理者，并且除了本用户组外，其他人无法修改文件。
 
 ```bash
@@ -65,6 +77,10 @@ linux@linux-ThinkCentre-E75:/home$ sudo chmod o-rwx sharehappy/
 linux@linux-ThinkCentre-E75:/home$ sudo chown user1 sharehappy/
 
 ```
+<<<<<<< HEAD
 ## 三、创建文件命令
+=======
+# 三、创建文件命令
+>>>>>>> 674a6daf68e3f3f257715aba490f2170e5a61265
 touch命令可以新建一个空文件，当某个程序需要一个文件无法启动，而这个文件实际上并不重要，可以通过新建一个空文件来骗过程序。
 touch的另一个用途是可以更新文件的时间等信息，而对内容不做更改。
