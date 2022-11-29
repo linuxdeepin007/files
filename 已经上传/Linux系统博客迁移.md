@@ -20,26 +20,31 @@ tags:
 
 ### （二）安装升级必要的软件
 软件包括：npm\git\nodejs
+
 ```bash
 linux@linux-ThinkCentre-E75:~/文档/blogs$ sudo apt install npm # 有时候因为版本不对报错，需要把nodejs升级到最新版本
 ```
 
 1. 产看node版本，没安装的请先安装；
+
 ```
  linux@linux-ThinkCentre-E75:~/文档/blogs$ node -v
 ```
 
-2. 清楚node缓存；
+2. 如果安装失败，清除node缓存；
+
 ```
 linux@linux-ThinkCentre-E75:~/文档/blogs$ sudo npm cache clean -f  
 ```
 
 3. 安装node版本管理工具'n';
+
 ```
 linux@linux-ThinkCentre-E75:~/文档/blogs$ sudo npm install n -g
 ```
 
 4. 使用版本管理工具安装指定node或者升级到最新node版本；
+
 ```
 linux@linux-ThinkCentre-E75:~/文档/blogs$ sudo n stable  （安装node最新版本）
 ```
@@ -51,7 +56,7 @@ linux@linux-ThinkCentre-E75:~/文档/blogs$ sudo npm install -g hexo
 
 ```
 
-### （三）通过ssh keys绑定gitee
+### （三）通过ssh keys绑定gitee/github
 
 1. 生成密钥（回车三次）
 
@@ -80,6 +85,34 @@ The key's randomart image is:
 +----[SHA256]-----+
 linux@linux-ThinkCentre-E75:~/文档/blogs$
 ```
+在github中的命令
+
+```bash
+linux@linux-Lenovo-XiaoXinPro-13API-2019:~$ ssh-keygen -t rsa -C 'linuxdeepin007@gmail.com'
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/linux/.ssh/id_rsa): 
+Created directory '/home/linux/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/linux/.ssh/id_rsa
+Your public key has been saved in /home/linux/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:raNP4f208L04TjXseVXc6pIXWUA4HJicIFhGyDQizK8 linuxdeepin007@gmail.com
+The key's randomart image is:
++---[RSA 3072]----+
+|+ .oo== .o =.+o  |
+| + .+o .  = +  o.|
+|  .          .  =|
+|   .     .   . +.|
+|  .     S .   B .|
+| E     . +   = +.|
+|        = o = = .|
+|       o . *.* . |
+|      ...  .*.o. |
++----[SHA256]-----+
+linux@linux-Lenovo-XiaoXinPro-13API-2019:~$ 
+
+```
 
 2. 通过查看 `~/.ssh/id_ed25519.pub` 公钥，和`~/.ssh/id_ed25519`获取对私钥文件内容，获取到你的 public key
 
@@ -99,6 +132,7 @@ linux@linux-ThinkCentre-E75:~/文档/blogs$
 ```
 
 3.  首次确认，需要确认并添加主机到本机SSH可信列表
+要注意按照命令提示输入 `yes`
 
 ```bash
 linux@linux-ThinkCentre-E75:~/文档/blogs$ ssh -T git@gitee.com
@@ -114,25 +148,7 @@ linux@linux-ThinkCentre-E75:~/文档/blogs$
 按照官方文档确认身份标识。
 
 ```bash
-*** 请告诉我您是谁。
-
-运行
-
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
-来设置您账号的缺省身份标识。
-如果仅在本仓库设置身份标识，则省略 --global 参数。
-
-fatal: 无法自动探测邮件地址（得到 'linux@linux-ThinkCentre-E75.(none)'）
-Username for 'https://gitee.com': linuxdeepin007
-Password for 'https://linuxdeepin007@gitee.com': 
-分支 'master' 设置为跟踪来自 'https://gitee.com/linuxdeepin007/blogs.git' 的远程分支 'master'。
-Everything up-to-date
-INFO  Deploy done: git
-linux@linux-ThinkCentre-E75:~/文档/blogs$ git config^C
-linux@linux-ThinkCentre-E75:~/文档/blogs$  git config --global user.email "you@example.com"
+```bash
 linux@linux-ThinkCentre-E75:~/文档/blogs$ git config --global user.email "bs0716@126.com"
 linux@linux-ThinkCentre-E75:~/文档/blogs$ git config --global user.name "linuxdeepin007"
-linux@linux-ThinkCentre-E75:~/文档/blogs$ hexo clean
 ```

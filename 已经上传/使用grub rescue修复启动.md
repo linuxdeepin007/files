@@ -9,11 +9,11 @@ tags:
    - boot failure
    - 双系统 
 ---
- GRUB (Grand Unified Bootloader)，是引导系统的工具，当安装双系统（linux+windows）时，win启动会覆盖grub，导致无法启动系统。本文介绍了两种方法修复启动失败的问题。
+本文介绍了两种方法修复启动失败的问题。
 <!-- more -->
-# 一、系统启动失败
+ GRUB (Grand Unified Bootloader)，是引导系统的工具，当安装双系统（linux+windows）时，win启动会覆盖grub，导致无法启动系统。
 
-## （一）系统启动失败情况
+## 一、系统启动失败情况
 
 linux系统启动失败出现grub rescue的情况是由于多系统启动，启动文件丢失或者被覆盖导致的。当启动失败时，通常会出现如下界面：
 
@@ -37,7 +37,7 @@ grub rescue> _
 grub rescue> _
 ```
 
-## （二）相关命令
+## 二、相关命令
 
 |命令|解释|示例 / 选项|
 |:----|:----|:----|
@@ -53,12 +53,12 @@ grub rescue> _
 |search|查找设备：--file 查找文件； --label 查找标签, --fs-uuid 查找系统文件 UUID.|search -file [filename]|
 |set|设置环境变量如果没有选项，则输出所有环境变量和值。|set [variable-name]=[value]|
 
-# 二、修复方法
+## 三、修复方法
 教程中提供两种修复grub的方法命令行操作和启动盘操作
 
-## （一）通过命令行修复
-### 1. 使用`set`命令，查看环境变量
-如下，该系统启动自`（hd0,msdos3）`
+### （一）通过命令行修复
+#### 1. 使用`set`命令，查看环境变量
+如下，该系统启动自 `（hd0,msdos3）`
 
 ```bash
 grub> set
@@ -75,7 +75,7 @@ root=hd0,msdos3
 grub> _
 ```
 
-### 2. 使用`ls`命令，查看分区表
+#### 2. 使用`ls`命令，查看分区表
 
 ```bash
 grub> ls
@@ -83,7 +83,7 @@ grub> ls
 grub> _
 ```
 
-### 3. 查找包含`boot`目录的分区
+#### 3. 查找包含`boot`目录的分区
 
 ```bash
 grub> ls （hd0,msdos3）
@@ -91,55 +91,55 @@ lost+found var/ dev/ run/ etc/ tmp/ sys/ proc/ usr/ bin boot/ lib lib64 mnt/ opt
 grub> _
 ```
 
-### 4. 设置启动分区作为`root`变量所在卷
+#### 4. 设置启动分区作为`root`变量所在卷
 
 ```bash
 set root=(hd0,msdos1)
 ```
 
-### 5. 载入`normal`启动模式
+#### 5. 载入`normal`启动模式
 
 ```bash
 insmod normal
 ```
 
-### 6. 启动normal 启动模式
+#### 6. 启动normal 启动模式
 
 ```bash
 normal
 ```
 
-### 7. 使用`linux`载入linux内核
+#### 7. 使用`linux`载入linux内核
 
 ```bash
 linux /boot/vmlinuz-4.2.0-16-generic root=/dev/sda1 ro
 ```
 
-### 8. 启动
+#### 8. 启动
 
 ```bash
 boot
 ```
 
-## （二）通过启动盘修复
+### （二）通过启动盘修复
 
-### 1. 制作linux启动安装盘并启动试用模式
+#### 1. 制作linux启动安装盘并启动试用模式
 
-### 2. 打开终端输入命令
+#### 2. 打开终端输入命令
 
 ```bash
 sudo add-apt-repository ppa:yannubuntu/boot-repair
 ```
-### 3. 在终端中安装并启动软件
+#### 3. 在终端中安装并启动软件
 
 ```bash
 sudo apt update
 sudo apt install boot-repair
 boot-repair
 ```
-### 4. 等待修复完成重启电脑
+#### 4. 等待修复完成重启电脑
 
-# 三、更新GRUB 启动文件
+## 三、更新GRUB 启动文件
 在系统重新启动之后，要重新配置grub，以确保安装成功
 
 ```bash

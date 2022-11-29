@@ -13,7 +13,7 @@ tags:
 多系统引导，修改grub启动顺序。
 <!-- more -->
 
-# 修改grub文件
+## 修改grub文件
 直接修改grub文件，位置/etc/defauts/grub
 
 ```bash
