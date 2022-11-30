@@ -112,9 +112,5 @@ update-alternatives --set ebtables /usr/sbin/ebtables-legacy
 
 在第一次进入页面时，你需要创建一个管理员账号，请妥善保管你的用户名密码，如果遗忘，使用sudo v2raya --reset-password命令重置
 
-<<<<<<< HEAD
 ### （三）导入节点
-=======
-### 三、导入节点
->>>>>>> 674a6daf68e3f3f257715aba490f2170e5a61265
 可以导入节点，也可以导入订阅节点。

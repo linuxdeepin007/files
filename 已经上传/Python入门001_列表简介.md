@@ -1,6 +1,6 @@
 ---
-title: Python入门—列表简介
-date: 2022-10-17
+title: Python入门001_列表简介
+date: 2022-08-17
 categories:
    - 编程电脑
    - PYTHON 
