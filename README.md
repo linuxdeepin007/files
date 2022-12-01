@@ -1,18 +1,10 @@
-<center>
-<img src="https://img.shields.io/github/languages/code-size/linuxdeepin007/code.github.io?style=flat" /> <img src="https://img.shields.io/github/commit-activity/y/linuxdeepin007/code.github.io?color=purple&style=flat" />
-
-<img src="https://img.shields.io/github/last-commit/linuxdeepin007/code.github.io?color=%23154&style=flat" /> <img src="https://img.shields.io/github/directory-file-count/linuxdeepin007/code.github.io?color=green&style=flat" />
-
-<img src="https://img.shields.io/github/stars/linuxdeepin007?style=social" /> <img src="https://img.shields.io/github/followers/linuxdeepin007?style=social" />
-
-</center>
+<img src="https://img.shields.io/github/languages/code-size/linuxdeepin007/code.github.io?style=flat" /> <img src="https://img.shields.io/github/commit-activity/y/linuxdeepin007/code.github.io?color=purple&style=flat" /><img src="https://img.shields.io/github/last-commit/linuxdeepin007/code.github.io?color=%23154&style=flat" /> <img src="https://img.shields.io/github/directory-file-count/linuxdeepin007/code.github.io?color=green&style=flat" /><img src="https://img.shields.io/github/stars/linuxdeepin007?style=social" /> <img src="https://img.shields.io/github/followers/linuxdeepin007?style=social" />
 <br>
 
 
 ![](https://preview.cloud.189.cn/image/imageAction?param=1ACE5790E30B898A7677366893E46DAC9E967EFC0616EAF8BA5FA2DB35435AB6DF588698537C13978174B8D5465EB83E46EBAE56D0F4EB04F5459F394C04AB5E829E8CBC08CE1B4BA72412B2C1C3F576F1A35169AB2F6A19DC8B0B0A8E6F951519BFFF00CEA9D34418D4DE0EBB68E20D)
 
 
-<center><font face='楷体' size=5>文件存储备份</font></center>
 
 ### 一、资料备份
 把博客文章源文件作为备份，定期更新。
