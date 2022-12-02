@@ -1,13 +1,13 @@
 ---
-title: EXCEL 合并表格填充编号
+title: Excel操作001_合并表格填充编号
 date: 2022-09-03
 categories:
    - 编程电脑
    - 办公软件
-   - EXCEL
+   - Excel
 tags: 
    - 合并单元格
-   - EXCEL
+   - Excel
    - 编号 
 ---
 

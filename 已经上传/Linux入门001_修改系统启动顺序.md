@@ -1,13 +1,13 @@
 ---
-title: LINUX修改系统启动顺序
+title: Linux入门001_修改系统启动顺序
 date: 2022-06-23
 categories:
    - 编程电脑
-   - LINUX
+   - Linux
 tags: 
    - 启动顺序
    - 系统
-   - LINUX 
+   - Linux 
 ---
 
 多系统引导，修改grub启动顺序。
@@ -17,8 +17,8 @@ tags:
 直接修改grub文件，位置/etc/defauts/grub
 
 ```bash
-linux@linux-Vostro-260:~$ sudo gedit /etc/default/grub
-[sudo] password for linux:
+Linux@Linux-Vostro-260:~$ sudo gedit /etc/default/grub
+[sudo] password for Linux:
 
 ______________________________________________________________
 # If you change this file, run 'update-grub' afterwards to update
@@ -30,8 +30,8 @@ GRUB_DEFAULT=4
 GRUB_TIMEOUT_STYLE=hidden
 GRUB_TIMEOUT=8
 GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
-GRUB_CMDLINE_LINUX=""
+GRUB_CMDLINE_Linux_DEFAULT="quiet splash"
+GRUB_CMDLINE_Linux=""
 
 # Uncomment to enable BadRAM filtering, modify to suit your needs
 # This works with Linux (no patch required) and with any kernel that obtains

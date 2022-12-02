@@ -1,18 +1,18 @@
 ---
-title: LINUX文件目录管理
-date: 2022-06-16 
+title: Linux入门002_文件目录管理
+date: 2022-06-25 
 categories:
   - 编程电脑
-  - LINUX
+  - Linux
 tags: 
-   - LINUX
+   - Linux
    - 文件目录管理
    - 命令行	
 ---
-linux首先建立一系列空目录，然后将文件挂载到目录中。主要介绍了目录内容和几个重要的文件管理命令。
+Linux首先建立一系列空目录，然后将文件挂载到目录中。主要介绍了目录内容和几个重要的文件管理命令。
 <!-- more -->
 
-## 一、linux 主要目录及其内容
+## 一、Linux 主要目录及其内容
 
 |目录|内容|
 |:----:|:----:|
@@ -36,33 +36,33 @@ linux首先建立一系列空目录，然后将文件挂载到目录中。主要
 
 ```bash
 # 新建一个名称为happygroup的用户组，并创建用户
-linux@linux-ThinkCentre-E75:/home$ sudo groupadd happygroup
+Linux@Linux-ThinkCentre-E75:/home$ sudo groupadd happygroup
 # 新建三个用户归入happygroup用户组，并设置密码为123
-inux@linux-ThinkCentre-E75:/home$ sudo useradd -G happygroup user1
-linux@linux-ThinkCentre-E75:/home$ sudo passwd user1
+inux@Linux-ThinkCentre-E75:/home$ sudo useradd -G happygroup user1
+Linux@Linux-ThinkCentre-E75:/home$ sudo passwd user1
 新的 密码： 
 重新输入新的 密码： 
 passwd：已成功更新密码
-linux@linux-ThinkCentre-E75:/home$ sudo useradd -G happygroup user2
-linux@linux-ThinkCentre-E75:/home$ sudo useradd -G happygroup user3
-linux@linux-ThinkCentre-E75:/home$ sudo passwd user2
+Linux@Linux-ThinkCentre-E75:/home$ sudo useradd -G happygroup user2
+Linux@Linux-ThinkCentre-E75:/home$ sudo useradd -G happygroup user3
+Linux@Linux-ThinkCentre-E75:/home$ sudo passwd user2
 新的 密码： 
 重新输入新的 密码： 
 passwd：已成功更新密码
-linux@linux-ThinkCentre-E75:/home$ sudo passwd user3
+Linux@Linux-ThinkCentre-E75:/home$ sudo passwd user3
 新的 密码： 
 重新输入新的 密码： 
 passwd：已成功更新密码
 # 在home目录下新建名为sharehappy的文件夹
-linux@linux-ThinkCentre-E75:/home$ sudo mkdir sharehappy
+Linux@Linux-ThinkCentre-E75:/home$ sudo mkdir sharehappy
 # 将sharehappy文件夹的权限交给happygroup
-linux@linux-ThinkCentre-E75:/home$ sudo chgrp happygroup  sharehappy/
+Linux@Linux-ThinkCentre-E75:/home$ sudo chgrp happygroup  sharehappy/
 # 增加happygroup组对sharehappy文件目录的读写执行权限
-linux@linux-ThinkCentre-E75:/home$ sudo chmod g+rwx sharehappy/
+Linux@Linux-ThinkCentre-E75:/home$ sudo chmod g+rwx sharehappy/
 # 撤销其他用户对该目录的读写执行权限
-linux@linux-ThinkCentre-E75:/home$ sudo chmod o-rwx sharehappy/
+Linux@Linux-ThinkCentre-E75:/home$ sudo chmod o-rwx sharehappy/
 # 把sharehappy目录的所有者更改为user1
-linux@linux-ThinkCentre-E75:/home$ sudo chown user1 sharehappy/
+Linux@Linux-ThinkCentre-E75:/home$ sudo chown user1 sharehappy/
 
 ```
 ## 三、创建文件命令

@@ -3,10 +3,10 @@ title: Python入门002_变量、数据类型
 date: 2022-10-17
 categories:
    - 编程电脑
-   - PYTHON 
+   - Python 
    - 入门课程
 tags: 
-   - PYTHON
+   - Python
    - 变量
    - 数据类型 
 ---

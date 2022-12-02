@@ -3,10 +3,10 @@ title: Python入门001_列表简介
 date: 2022-08-17
 categories:
    - 编程电脑
-   - PYTHON 
+   - Python 
    - 入门课程
 tags: 
-   - PYTHON
+   - Python
    - 列表
    - 数据类型 
 ---

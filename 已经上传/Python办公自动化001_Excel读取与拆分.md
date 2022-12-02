@@ -1,12 +1,12 @@
 ---
-title: PYTHON操作EXCEL读取与拆分
+title: Python办公自动化001_Excel读取与拆分
 date: 2022-07-23
 categories:
    - 编程电脑
-   - PYTHON
+   - Python
 tags: 
-   - PYTHON
-   - EXCEL
+   - Python
+   - Excel
    - 办公自动化 
 ---
 

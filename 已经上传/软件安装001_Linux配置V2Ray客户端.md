@@ -1,13 +1,14 @@
 ---
-title:  LINUX 配置 V2Ray 客户端
+title: 软件安装001_Linux配置V2Ray客户端
 date: 2022-11-05
 categories:
    - 编程电脑
+   - 软件安装
    - 代理上网
 tags: 
    - v2raya
    - 代理
-   - LINUX
+   - Linux
 ---
 
 v2rayA 是一个易用而强大的，专注于 Linux 的 V2Ray 客户端。

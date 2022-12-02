@@ -1,9 +1,9 @@
 ---
-title: 在linux系统上搭建个人博客（hexo+gitee）
+title: 个人博客搭建001_Linux系统搭建个人博客
 date: 2022-04-10 
 categories:
   - 编程电脑
-  - HEXO
+  - 博客搭建
 tags: 
    - HEXO
    - BUG
@@ -13,18 +13,18 @@ tags:
 <!-- more -->
 从看教程到上手操作，前前后后折腾了一天多的时间。主要的问题集中在两个方面：一是如何让网页在本地运行；另外就是如何让网页在gitee page上运行。
 
-## 一、linux系统
-在搭建个人博客之前，选择一个熟悉的系统还是相当重要的，由于linux天生优势，加之目前使用的电脑过于老旧，所以我选择了在linux系统下搭建个人博客。需要部署包括`Nodejs` `git`等在内的环境，这里强烈建议备份系统，如果系统内各种软件无法“和平相处”的时候，可以一键还原。
+## 一、Linux系统
+在搭建个人博客之前，选择一个熟悉的系统还是相当重要的，由于Linux天生优势，加之目前使用的电脑过于老旧，所以我选择了在Linux系统下搭建个人博客。需要部署包括`Nodejs` `git`等在内的环境，这里强烈建议备份系统，如果系统内各种软件无法“和平相处”的时候，可以一键还原。
 
-### （一）备份linux系统
-在备份系统之前，准备一个linux系统安装盘，便于在图形界面下操作。我使用的是xbuntu系统，其他linux发行版本大同小异。
+### （一）备份Linux系统
+在备份系统之前，准备一个Linux系统安装盘，便于在图形界面下操作。我使用的是xbuntu系统，其他Linux发行版本大同小异。
 
 #### 使用tar命令备份
-和windows系统不同，linux中root用户可以为所欲为，甚至可以将系统本身删除，参考删库跑路操作，所以首先切换到root用户，进行如下操作：
+和windows系统不同，Linux中root用户可以为所欲为，甚至可以将系统本身删除，参考删库跑路操作，所以首先切换到root用户，进行如下操作：
 
 ```bash
-root@linux:/home/linux/hexo/blog/blogs# cd /
-root@linux:/# tar cvpzf backup.tgz --exclude=/proc --exclude=/lost+found --exclude=/backup.tgz --exclude=/mnt --exclude=/sys /
+root@Linux:/home/Linux/hexo/blog/blogs# cd /
+root@Linux:/# tar cvpzf backup.tgz --exclude=/proc --exclude=/lost+found --exclude=/backup.tgz --exclude=/mnt --exclude=/sys /
 
 ```
 tar 命令解释：
@@ -44,7 +44,7 @@ tar 命令解释：
 ```bash
 # tar cvpjf backup.tar.bz2  --exclude=/proc  --exclude=/lost+found  --exclude=/backup.tar.bz2  --exclude=/mnt  --exclude=/sys /
 ```
-### （二）恢复linux系统
+### （二）恢复Linux系统
 #### 使用tar命令恢复系统
 在进行恢复系统的操作时一定要小心！如果你不清楚自己在做什么，那么你有可能把重要的数据弄丢，请务必小心！
 
@@ -80,7 +80,7 @@ tar 命令解释：
 在个人文件夹下新建本地博客文件夹，我的是hexo/blog
 
 ```bash
-linux@linux:~/hexo/blog/blogs$ npm install -g hexo
+Linux@Linux:~/hexo/blog/blogs$ npm install -g hexo
 ```
 
 耐心等一会儿，可能会失败，多试几次就可以了，网上的帖子有提到用淘宝的cnpm安装，个人不建议，后期可能会出现莫名其妙的错误。下载完成后，你会得到这样一个结构的文件夹
