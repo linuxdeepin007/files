@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 [![GitHub Streak](https://streak-stats.demolab.com/?user=linuxdeepin007&currStreakNum=2FD3EB&fire=pink&sideLabels=F00&date_format=[Y.]n.j)](https://git.io/streak-stats)
 
 
 ## 图床备份
+=======
+##  <center>图床备份</center>
+
+>>>>>>> 36a7d4d97d43cc5b0b84b6b8bc4edc2472a2d087
 本来是想着使用github直接作为图床使用，没想到加载不了。只能另寻他法
 
 ### 测试过程
