@@ -57,7 +57,7 @@ grub rescue> _
 教程中提供两种修复grub的方法命令行操作和启动盘操作
 
 ### （一）通过命令行修复
-#### 1. 使用`set`命令，查看环境变量
+#### 1.使用`set`命令，查看环境变量
 如下，该系统启动自 `（hd0,msdos3）`
 
 ```bash
@@ -75,7 +75,7 @@ root=hd0,msdos3
 grub> _
 ```
 
-#### 2. 使用`ls`命令，查看分区表
+#### 2.使用`ls`命令，查看分区表
 
 ```bash
 grub> ls
@@ -83,7 +83,7 @@ grub> ls
 grub> _
 ```
 
-#### 3. 查找包含`boot`目录的分区
+#### 3.查找包含`boot`目录的分区
 
 ```bash
 grub> ls （hd0,msdos3）
@@ -91,31 +91,31 @@ lost+found var/ dev/ run/ etc/ tmp/ sys/ proc/ usr/ bin boot/ lib lib64 mnt/ opt
 grub> _
 ```
 
-#### 4. 设置启动分区作为`root`变量所在卷
+#### 4.设置启动分区作为`root`变量所在卷
 
 ```bash
 set root=(hd0,msdos1)
 ```
 
-#### 5. 载入`normal`启动模式
+#### 5.载入`normal`启动模式
 
 ```bash
 insmod normal
 ```
 
-#### 6. 启动normal 启动模式
+#### 6.启动normal 启动模式
 
 ```bash
 normal
 ```
 
-#### 7. 使用`Linux`载入Linux内核
+#### 7.使用`Linux`载入Linux内核
 
 ```bash
 Linux /boot/vmlinuz-4.2.0-16-generic root=/dev/sda1 ro
 ```
 
-#### 8. 启动
+#### 8.启动
 
 ```bash
 boot
@@ -123,21 +123,21 @@ boot
 
 ### （二）通过启动盘修复
 
-#### 1. 制作Linux启动安装盘并启动试用模式
+#### 1.制作Linux启动安装盘并启动试用模式
 
-#### 2. 打开终端输入命令
+#### 2.打开终端输入命令
 
 ```bash
 sudo add-apt-repository ppa:yannubuntu/boot-repair
 ```
-#### 3. 在终端中安装并启动软件
+#### 3.在终端中安装并启动软件
 
 ```bash
 sudo apt update
 sudo apt install boot-repair
 boot-repair
 ```
-#### 4. 等待修复完成重启电脑
+#### 4.等待修复完成重启电脑
 
 ## 三、更新GRUB 启动文件
 在系统重新启动之后，要重新配置grub，以确保安装成功

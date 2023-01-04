@@ -120,7 +120,7 @@ git clone https://github.com/fluid-dev/hexo-theme-fluid.git
 
 ### （四）修改配置
 
-#### 1. 修改配置
+#### 1.修改配置
 修改 Hexo 博客目录中的 _config.yml：
 
 ```bash
@@ -128,7 +128,7 @@ theme: fluid  # 指定主题
 language: zh-CN  # 指定语言，会影响主题显示的语言，按需修改
 ```
 
-#### 2. 创建主页
+#### 2.创建主页
 首次使用主题的「关于页」需要手动创建：
 
 ```bash

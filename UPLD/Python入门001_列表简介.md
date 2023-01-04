@@ -90,7 +90,7 @@ print(motorcycles)
 ```
 
 ### （二）在列表中添加元素
-#### 1. 在列表末尾添加元素
+#### 1.在列表末尾添加元素
 使用`append()` 办法，将元素附加 （append）到列表。
 
 ```python
@@ -106,7 +106,7 @@ print(motorcycles)
 ['honda', 'yamaha', 'suzuki', 'ducati']
 ```
 
-#### 2. 在列表中插入元素
+#### 2.在列表中插入元素
 使用方法`insert() `可在列表的任何位置添加新元素。
 
 方法insert() 在索引0 处添加空间，并将值'ducati' 存储到这个地方。这种操作将列表中既有的每个元素都右移一个位置
@@ -125,7 +125,7 @@ print(motorcycles)
 ```
 
 ### （三）从列表中删除元素
-#### 1. 使用 `del` 语句删除元素
+#### 1.使用 `del` 语句删除元素
 如果知道要删除的元素在列表中的位置，可使用 `del` 语句。
 
 ```python
@@ -140,7 +140,7 @@ print(motorcycles)
 ['honda', 'yamaha', 'suzuki']
 ['yamaha', 'suzuki']
 ```
-#### 2. 使用方法 `pop()` 删除元素
+#### 2.使用方法 `pop()` 删除元素
 
 > 每当你使用pop() 时，被弹出的元素就不再在列表中了
 
@@ -163,7 +163,7 @@ print(f'The last bicycle I owned was "{poped_motorcycles.title()}".')
 ['honda', 'yamaha']
 The last bicycle I owned was "Suzuki".
 ```
-#### 3. 根据值删除元素 `remove()`
+#### 3.根据值删除元素 `remove()`
 有时候，你不知道要从列表中删除的值所处的位置,只知道要删除的元素的值，可使用方法`remove()`。
 
 > 使用remove() 从列表中删除元素时，也可接着使用它的值。
