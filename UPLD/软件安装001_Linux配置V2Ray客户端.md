@@ -22,10 +22,9 @@ v2rayA 的功能依赖于 V2Ray 内核，因此需要安装内核。
 
 #### 1.V2Ray / Xray 的官方脚本
 
-V2Ray 安装参考：https://github.com/v2fly/fhs-install-v2ray
+V2Ray 安装参考：<https://github.com/v2fly/fhs-install-v2ray>
 
-Xray 安装参考：https://github.com/XTLS/Xray-install
-
+Xray 安装参考：<https://github.com/XTLS/Xray-install>
 
 #### 2.v2rayA 提供的镜像脚本（推荐）
 
@@ -65,13 +64,17 @@ sudo apt install v2raya
 #### 2.手动安装 deb 包
 
 ##### a.下载 deb 包
+
 下载后可以使用 Gdebi、QApt 等图形化工具来安装，也可以使用命令行：
 
 ```bash
 sudo apt install /path/download/installer_debian_xxx_vxxx.deb ### 自行替换 deb 包所在的实际路径
 ```
+
 ## 二、使用方法
+
 ### （一）启动 v2rayA / 设置 v2rayA 自动启动
+
 从 1.5 版开始将不再默认为用户启动 v2rayA 及设置开机自动。
 
 #### 1.启动 v2rayA
@@ -109,9 +112,11 @@ update-alternatives --set ebtables /usr/sbin/ebtables-legacy
 切换后重启即可。
 
 ### （二）创建帐号
-如果你通过 2017 端口 如 http://localhost:2017 无法访问 UI 界面，请检查你的服务是否已经启动。相关问题接下来进入 UI，本节将介绍 v2rayA 的基本操作流程。
+
+如果你通过 2017 端口 如 <http://localhost:2017> 无法访问 UI 界面，请检查你的服务是否已经启动。相关问题接下来进入 UI，本节将介绍 v2rayA 的基本操作流程。
 
 在第一次进入页面时，你需要创建一个管理员账号，请妥善保管你的用户名密码，如果遗忘，使用sudo v2raya --reset-password命令重置
 
 ### （三）导入节点
+
 可以导入节点，也可以导入订阅节点。

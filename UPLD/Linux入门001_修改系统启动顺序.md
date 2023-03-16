@@ -14,6 +14,7 @@ tags:
 <!-- more -->
 
 ## 修改grub文件
+
 直接修改grub文件，位置/etc/defauts/grub
 
 ```bash
@@ -38,4 +39,5 @@ GRUB_CMDLINE_Linux=""
 # the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
 #GRUB_BADRAM="0x01234567,0xfefefefe,0x89abcdef,0xefefefef"
 ```
+
 GRUB_DEFAULT=4，其中第一项是0，第二项是1,以此类推。以本机的启动选项来说，如果将最后一个作为启动默认选项，则数字为4

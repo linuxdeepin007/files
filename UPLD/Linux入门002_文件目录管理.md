@@ -32,6 +32,7 @@ Linux首先建立一系列空目录，然后将文件挂载到目录中。主要
 |/var|系统专用的数据和配置文件|
 
 ## 二、共享文件实例
+
 需求：新建一个名称是happygroup的用户组，添加user1、 user2和user3三个用户，设置工作目录为sharehappy。设置user1为管理者，并且除了本用户组外，其他人无法修改文件。
 
 ```bash
@@ -65,6 +66,8 @@ Linux@Linux-ThinkCentre-E75:/home$ sudo chmod o-rwx sharehappy/
 Linux@Linux-ThinkCentre-E75:/home$ sudo chown user1 sharehappy/
 
 ```
+
 ## 三、创建文件命令
+
 touch命令可以新建一个空文件，当某个程序需要一个文件无法启动，而这个文件实际上并不重要，可以通过新建一个空文件来骗过程序。
 touch的另一个用途是可以更新文件的时间等信息，而对内容不做更改。

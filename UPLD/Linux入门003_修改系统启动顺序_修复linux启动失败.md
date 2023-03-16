@@ -47,17 +47,20 @@ grub rescue> _
 |initrd|载入initrd.img 文件|initrd (hd0,1)/initrd.img|
 |insmod|载入模式|insmod (hd0,1)/boot/grub/normal.mod|
 |loopback|挂在镜像为设备|loopback loop0 (hd0,1)/iso/image.iso|
-|ls|列举文件及目录|	ls (hd0,1)|
+|ls|列举文件及目录| ls (hd0,1)|
 |lsmod|列举所有模式|-|
 |normal|激活普通模式|+|
 |search|查找设备：--file 查找文件； --label 查找标签, --fs-uuid 查找系统文件 UUID.|search -file [filename]|
 |set|设置环境变量如果没有选项，则输出所有环境变量和值。|set [variable-name]=[value]|
 
 ## 三、修复方法
+
 教程中提供两种修复grub的方法命令行操作和启动盘操作
 
 ### （一）通过命令行修复
+
 #### 1.使用`set`命令，查看环境变量
+
 如下，该系统启动自 `（hd0,msdos3）`
 
 ```bash
@@ -130,6 +133,7 @@ boot
 ```bash
 sudo add-apt-repository ppa:yannubuntu/boot-repair
 ```
+
 #### 3.在终端中安装并启动软件
 
 ```bash
@@ -137,9 +141,11 @@ sudo apt update
 sudo apt install boot-repair
 boot-repair
 ```
+
 #### 4.等待修复完成重启电脑
 
 ## 三、更新GRUB 启动文件
+
 在系统重新启动之后，要重新配置grub，以确保安装成功
 
 ```bash

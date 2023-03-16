@@ -23,8 +23,6 @@ Linux version 4.15.0-175-generic (buildd@lcy02-amd64-034) (gcc version 7.5.0 (Ub
   
 ```
 
-  
-
 - 当前系统配置
 
 ```bash
@@ -34,8 +32,6 @@ linux@linux:~$ free -mh
   交换：        974M        6.8M        968M
   
 ```
-
-  
 
 ## 二、交换分区（swap）
 
@@ -87,7 +83,7 @@ inux@linux:~$ free -hm
 
 ### （一）永久设置swap分区
 
-在配置文件末尾增加`linux@linux:~$ sudo gedit /etc/fstab` 
+在配置文件末尾增加`linux@linux:~$ sudo gedit /etc/fstab`
 
 ```bash
 linux@linux:~$ sudo gedit /etc/fstab # 打开配置文件
