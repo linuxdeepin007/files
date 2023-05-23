@@ -141,6 +141,7 @@ docker ps -a
 docker exec -it 容器ID /bin/bash
 ```
 
+<<<<<<< HEAD
 ### （三）Memos 服务升级
 #### 1.删除现有容器
 首先进入memo文件夹，然后进行操作，一般情况下操作会出错，没有yml类型文件，可忽略。
@@ -174,6 +175,8 @@ sudo docker run -d --name memos -p 5230:5230 -v /home/linux/memo/:/var/opt/memos
 #### 5.恢复文件、更改文件权属并重新设置内网穿透
 
 
+=======
+>>>>>>> 1c1eca960bc274aa0889e5d7f74fc3f120868fd7
 ## 三、第三方客户端
 
 - 第三方客户端：[Moe Memos](https://memos.moe/)
@@ -182,4 +185,7 @@ sudo docker run -d --name memos -p 5230:5230 -v /home/linux/memo/:/var/opt/memos
 - Telegram Bot：[qazxcdswe123/telegramMemoBot]
 (<https://github.com/qazxcdswe123/telegramMemoBot>)
 - Obsidian插件： [Obsidian Memos](https://github.com/quorafind/obsidian-memos)
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1c1eca960bc274aa0889e5d7f74fc3f120868fd7
