@@ -141,6 +141,42 @@ docker ps -a
 docker exec -it 容器ID /bin/bash
 ```
 
+<<<<<<< HEAD
+### （三）Memos 服务升级
+#### 1.删除现有容器
+首先进入memo文件夹，然后进行操作，一般情况下操作会出错，没有yml类型文件，可忽略。
+
+```
+cd memos
+docker-compose down  
+docker-compose pull
+docker-compose up -d
+```
+
+#### 2.备份文件
+首先将数据文件、配置文件备份。也就是memo文件夹下的三个文件。 `memos_prod.db ` 和 `memos_prod.db-shm`   还有 `memos_prod.db-wal` 三个文件备份，以待恢复。
+
+#### 3.删除容器
+
+```
+docker stop memos
+
+docker rm -f memos
+```
+#### 4.拉取最新镜像并创建容器
+
+```
+docker pull neosmemo/memos:latest  # 拉取最新镜像
+
+sudo docker run -d --name memos -p 5230:5230 -v /home/linux/memo/:/var/opt/memos neosmemo/memos:latest  # 创建容器
+
+```
+
+#### 5.恢复文件、更改文件权属并重新设置内网穿透
+
+
+=======
+>>>>>>> 1c1eca960bc274aa0889e5d7f74fc3f120868fd7
 ## 三、第三方客户端
 
 - 第三方客户端：[Moe Memos](https://memos.moe/)
@@ -149,3 +185,7 @@ docker exec -it 容器ID /bin/bash
 - Telegram Bot：[qazxcdswe123/telegramMemoBot]
 (<https://github.com/qazxcdswe123/telegramMemoBot>)
 - Obsidian插件： [Obsidian Memos](https://github.com/quorafind/obsidian-memos)
+<<<<<<< HEAD
+
+=======
+>>>>>>> 1c1eca960bc274aa0889e5d7f74fc3f120868fd7
